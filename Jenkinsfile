@@ -1,14 +1,16 @@
 pipeline {
     agent any
     stages {
-        stage('version'){
+        stage('version') {
             steps {
-                sh 'push --version'
+                // Execute a PowerShell command to get the version
+                powershell 'Get-Host | Select-Object Version'
             }
         }
-        stage('hello'){
+        stage('hello') {
             steps {
-                sh 'push hello.ps1'
+                // Execute a PowerShell script named hello.ps1
+                powershell './hello.ps1'
             }
         }
     }
