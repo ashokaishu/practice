@@ -10,7 +10,7 @@ pipeline {
         stage('hello') {
             steps {
                 // Execute a PowerShell script named hello.ps1
-                powershell './hello.ps1'
+                powershell './hello.java'
             }
         }
     }
