@@ -7,11 +7,10 @@ pipeline {
                 powershell 'Get-Host | Select-Object Version'
             }
         }
-        stage('hello') {
+        stage('run python script') {
             steps {
-                // Execute a PowerShell script named hello.ps1
-                bat 'javac hello.java'
-                bat 'java hello'
+                // Run the Python script using python command
+                bat 'python your_script.py'
             }
         }
     }
