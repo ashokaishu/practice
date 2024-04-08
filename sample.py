@@ -12,7 +12,7 @@ def find_smallest_largest(numbers):
 
     return smallest, largest
 
-numbers = [5, 10, 3, 8, 15, 2]
+numbers = [50, 1002, 398, 876, 150, 246]
 smallest, largest = find_smallest_largest(numbers)
 print("Smallest number:", smallest)
 print("Largest number:", largest)
